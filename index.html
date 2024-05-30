@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True/False Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>True/False Game</h1>
+        <div class="image-container">
+            <img src="stance.jpg" alt="Player Image" id="player-image">
+        </div>
+        <form id="quizForm">
+            <div class="question" id="q1">
+                <p>a) The player is standing with the feet shoulder width apart.</p>
+                <label><input type="radio" name="q1" value="true"> TRUE</label>
+                <label><input type="radio" name="q1" value="false"> FALSE</label>
+            </div>
+            <div class="question" id="q2">
+                <p>b) The player’s knees are slightly bent with arms together.</p>
+                <label><input type="radio" name="q2" value="true"> TRUE</label>
+                <label><input type="radio" name="q2" value="false"> FALSE</label>
+            </div>
+            <div class="question" id="q3">
+                <p>c) The player’s hands are joined together with a locked wrist and elbow.</p>
+                <label><input type="radio" name="q3" value="true"> TRUE</label>
+                <label><input type="radio" name="q3" value="false"> FALSE</label>
+            </div>
+            <button type="button" onclick="validateAnswers()">Submit</button>
+            <button type="button" onclick="undoSelection()">Undo</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
